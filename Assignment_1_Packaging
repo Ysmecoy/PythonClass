@@ -1,0 +1,20 @@
+# Data from User
+side_length_small = int(input('Please enter the side-length of the small cube-shaped box: '))
+length_large_cuboid = int(input('Please enter length of the large cuboid-shaped box: '))
+width_large_cuboid= int(input('Please enter width of the large cuboid-shaped box: '))
+height_large_cuboid = int(input('Please enter height of the large cuboid-shaped box: '))
+
+
+# Calculations 
+# 1. Calculate how many small cubes fit in the length of the cuboid-shaped box
+small_cubes_in_lenght = length_large_cuboid//side_length_small
+#2. Calculate how many small cubes fit in the width of the cuboid-shaped box
+small_cubes_in_width = width_large_cuboid//side_length_small
+#3. Calculate how many small cubes fit in the height of the cuboid_shaped box
+small_cubes_in_height = height_large_cuboid//side_length_small
+#4.  Small cubes in the cuboid-shaped box will be the multiplication of small cubes adjusted in the length by small cubes adjusted in the width by small cubes adjusted in the height
+num_small_cubes = small_cubes_in_height*small_cubes_in_lenght*small_cubes_in_width
+
+# Presentation of calculation results to the user
+print()
+print('There are', num_small_cubes, 'small cubes of', side_length_small,'side-length in a cuboid-shaped box of', length_large_cuboid,'length,', width_large_cuboid, 'width, and', height_large_cuboid, 'height.')
