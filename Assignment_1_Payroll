@@ -1,0 +1,32 @@
+# Data from User
+last_name = input('Please enter your last name: ')
+user_SSN = input('Please enter last 4 digits of your SSN: ')
+hourly_pay_rate = float(input('Please enter your hourly pay rate: '))
+number_working_hours = int(input('Please enter the numbers of working hours: '))
+
+
+# Calculation of gross pay, federal withholding tax, state withholding tax and net pay
+
+gross_pay = hourly_pay_rate*number_working_hours
+federal_withholding = 0.15*gross_pay
+state_withholding = 0.05*gross_pay
+net_pay = gross_pay - federal_withholding - state_withholding
+
+# Presentation of calculation results to the user
+print()
+print()
+print('Last Name:', last_name)
+print('SSN (Last 4 Digits):', user_SSN)
+print(r'Hourly Pay Rate: $', end='')
+print(format(hourly_pay_rate,'.2f'))
+print('Number of Working Hours:', number_working_hours)
+print('---------------------------------------------------')
+print(r'Gross Pay: $', end='')
+print(format(gross_pay,'.2f'))
+print(r'Federal Withholding: $', end='')
+print(format(federal_withholding,'.2f'))
+print(r'State Withholding: $', end='')
+print(format(state_withholding,'.2f'))
+print(r'Net Pay: $', end='')
+print(format(net_pay,'.2f'))
+
