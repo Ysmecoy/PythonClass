@@ -1,0 +1,15 @@
+Number of x-y pairs read: 3585 
+
+ Algebraic average of x: -3.093635 
+ Algebraic average of y: -1.740710 
+ Standard deviation of x: 574.360094 
+ Standard deviation of y: 584.926010 
+
+ Correlation coefficient: 0.014591 
+
+ Linear fitting function: 
+
+ y = 0.014859x + -1.694742 
+
+ Slope: 0.014859 
+ Intercept: -1.694742
